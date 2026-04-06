@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sathiyanathan Mohan - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 8mm 8mm 8mm 8mm;
+            }
+            html, body {
+                height: 100%;
+                overflow: hidden;
+            }
+            body {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            .resume-wrapper {
+                page-break-inside: avoid;
+                break-inside: avoid;
+            }
+        }
+
+        /* Highlight styles for key achievements */
+        .highlight-badge {
+            background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+            color: #fff;
+            border-left: 3px solid #60a5fa;
+        }
+        .achievement-card {
+            border-left: 3px solid #3b82f6;
+            background: linear-gradient(to right, #eff6ff, #fff);
+        }
+        .achievement-card-new {
+            border-left: 3px solid #f59e0b;
+            background: linear-gradient(to right, #fffbeb, #fff);
+        }
+        .stat-pill {
+            background: #1e40af;
+            color: white;
+            font-weight: 700;
+            font-size: 0.7rem;
+            padding: 1px 7px;
+            border-radius: 9999px;
+            display: inline-block;
+            margin-left: 4px;
+        }
+        .skill-tag-arch {
+            background: #dbeafe;
+            border: 1px solid #93c5fd;
+            color: #1e40af;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 py-6 px-4 sm:px-6 print:bg-white print:py-0 print:px-0">
+
+    <!-- Print Button -->
+    <div class="max-w-4xl mx-auto mb-3 flex justify-end print:hidden">
+        <button onclick="window.print()"
+            class="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors shadow-sm">
+            <i data-lucide="printer" class="w-[18px] h-[18px]"></i>
+            Save as PDF
+        </button>
+    </div>
+
+    <!-- Resume Container -->
+    <div class="resume-wrapper max-w-4xl mx-auto bg-white shadow-xl overflow-hidden print:shadow-none print:max-w-full">
+
+        <!-- Header -->
+        <header class="bg-slate-900 text-white px-8 py-4 sm:py-5 sm:px-12">
+            <h1 class="text-3xl sm:text-4xl font-bold tracking-tight uppercase">
+                Sathiyanathan <span class="text-blue-400">Mohan</span>
+            </h1>
+            <h2 class="text-base sm:text-lg font-light text-slate-300 mt-0.5 tracking-wide">
+                Lead Software Engineer
+            </h2>
+            <div class="flex flex-wrap gap-x-5 gap-y-1 mt-2 text-xs text-slate-300">
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 text-blue-400"></i>
+                    <span>+91-9444494414</span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 text-blue-400"></i>
+                    <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8cffedf8e4e5f5ede2edf8e4ede2a2e1e3e4ede2cce9e1ede5e0a2efe3e1">[email&#160;protected]</a></span>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="linkedin" class="w-3.5 h-3.5 text-blue-400"></i>
+                    <a href="https://linkedin.com/in/sathiyanathan-m" target="_blank" class="hover:text-white transition-colors">linkedin.com/in/sathiyanathan-m</a>
+                </div>
+                <div class="flex items-center gap-1.5">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-blue-400"></i>
+                    <span>Chennai, India</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Split -->
+        <div class="flex flex-col md:flex-row print:flex-row">
+
+            <!-- Left Column -->
+            <div class="flex-1 px-7 py-5 sm:px-10 border-r border-gray-100">
+
+                <!-- Summary -->
+                <section class="mb-5">
+                    <div class="flex items-center gap-2 border-b-2 border-blue-600 pb-1 mb-2">
+                        <i data-lucide="user" class="w-4 h-4 text-blue-600"></i>
+                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">Professional Summary</h3>
+                    </div>
+                    <p class="text-gray-700 leading-snug text-xs text-justify">
+                        As a Lead Software Engineer with over <strong>9 years of experience</strong>, I specialize in designing scalable distributed systems, <strong>microservices</strong>, and <strong>event-driven platforms</strong> in high-volume e-commerce environments. I have a proven track record of leveraging AI technologies to create automation platforms and lead Agile teams in developing high-throughput systems that drive efficiency and transaction processing across various sectors.
+                    </p>
+                </section>
+
+                <!-- Experience -->
+                <section class="mb-5">
+                    <div class="flex items-center gap-2 border-b-2 border-blue-600 pb-1 mb-3">
+                        <i data-lucide="briefcase" class="w-4 h-4 text-blue-600"></i>
+                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">Work Experience</h3>
+                    </div>
+
+                    <!-- Job 1 -->
+                    <div class="mb-4">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                            <h4 class="text-base font-bold text-slate-800">Lead Software Engineer</h4>
+                            <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full whitespace-nowrap">01/2019 – Present</span>
+                        </div>
+                        <div class="text-xs font-medium text-slate-600 mb-0.5">Grass.ai</div>
+                        <div class="text-xs italic text-slate-500 mb-2">Technology company specializing in omnichannel commerce platforms</div>
+                        <ul class="list-disc list-outside ml-4 text-xs text-gray-700 space-y-1 leading-snug marker:text-blue-400">
+                            <li>Led system design and architecture of a scalable <strong>microservices-based</strong> and <strong>event-driven</strong> omnichannel commerce platform.</li>
+                            <li>Architected distributed services capable of processing <span class="stat-pill">5M+ orders/day</span> during peak campaign periods.</li>
+                            <li>Built large-scale integrations across marketplaces, logistics providers, warehouse systems, and marketing platforms enabling unified data synchronization.</li>
+                            <li>Architected the <strong>Agent Foundry Framework</strong> — a <strong>centralized AI agent builder</strong> empowering engineering teams to create production-grade AI agents aligned with organizational standards; built on LangChain, LangGraph, RAG pipelines, and MCP integrations, with built-in <strong>observability, distributed tracing</strong>, and agent lifecycle management.</li>
+                            <li>Developed a <strong>Chrome Extension</strong> automation tool for marketplace report management — enabling <span class="stat-pill">~65% automated</span> data downloads from Quick Commerce &amp; e-commerce portals.</li>
+                            <li>Leveraged the <strong>Agent Foundry Framework</strong> to build AI-powered buyer engagement agents for <strong>Shopee, TikTok Shop, and Lazada</strong> — automating <span class="stat-pill">80–90% of buyer queries</span> and boosting chat response coverage by <strong>&gt;80%</strong>, drastically reducing manual customer support load.</li>
+                            <li>Led implementation of <strong>SOC 2 Type II</strong> controls across the microservices architecture, establishing security guardrails, audit trails, and compliance automation — reducing audit gaps by <span class="stat-pill">90%</span>.</li>
+                            <li>Participated in the Architecture Review Board (ARB) ensuring architecture standards and best practices.</li>
+                            <li>Served as Scrum Master, leading Agile development processes and mentoring engineers.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div>
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                            <h4 class="text-base font-bold text-slate-800">Software Engineer</h4>
+                            <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2.5 py-0.5 rounded-full whitespace-nowrap">01/2017 – 01/2019</span>
+                        </div>
+                        <div class="text-xs font-medium text-slate-600 mb-2">EnnVee Solutions Private Limited</div>
+                        <ul class="list-disc list-outside ml-4 text-xs text-gray-700 space-y-1 leading-snug marker:text-blue-400">
+                            <li>Played a critical role in the full-stack design and development of multiple <strong>microservices-based</strong> solutions, improving system modularity and deployment flexibility.</li>
+                            <li>Engineered and implemented CI/CD pipelines, resulting in automated deployment and significant improvements in software delivery speed and quality assurance.</li>
+                            <li>Provided comprehensive technical support, including code reviews and contributing to a collaborative development environment.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section class="mb-5">
+                    <div class="flex items-center gap-2 border-b-2 border-blue-600 pb-1 mb-2">
+                        <i data-lucide="code-2" class="w-4 h-4 text-blue-600"></i>
+                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">Technical Skills</h3>
+                    </div>
+
+                    <div class="space-y-2">
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-700 uppercase mb-1">Architecture &amp; Concepts</h4>
+                            <div class="flex flex-wrap gap-1">
+                                <!-- Highlighted new skills -->
+                                <span class="text-xs skill-tag-arch px-2 py-0.5 rounded-md">Microservice</span>
+                                <span class="text-xs skill-tag-arch px-2 py-0.5 rounded-md">Event-Driven</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Omnichannel</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">REST</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Scrum</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Serverless</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-700 uppercase mb-1">Cloud &amp; DevOps</h4>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">AWS (VPC, Auto Scaling)</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Docker</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Kubernetes</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Jenkins</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Git</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-700 uppercase mb-1">Languages</h4>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Java</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Python</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">SQL</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">JavaScript</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">HTML</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-700 uppercase mb-1">Frameworks &amp; Libs</h4>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">SpringBoot</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Apache Camel</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">JUnit</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Mockito</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">React</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Redux</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">jQuery</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-700 uppercase mb-1">Databases &amp; Brokers</h4>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">PostgreSQL</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">MongoDB</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Redis</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">RabbitMQ</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Apache Kafka</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold text-slate-700 uppercase mb-1">Monitoring &amp; Tools</h4>
+                            <div class="flex flex-wrap gap-1">
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Grafana</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Prometheus</span>
+                                <span class="text-xs bg-white border border-slate-200 text-slate-700 px-2 py-0.5 rounded-md">Chrome Extensions</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section>
+                    <div class="flex items-center gap-2 border-b-2 border-blue-600 pb-1 mb-2">
+                        <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-600"></i>
+                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">Education</h3>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-800">Bachelor of Computer Science</h4>
+                        <div class="text-xs text-slate-600 mt-0.5">Madras University, Chennai</div>
+                        <div class="text-xs font-semibold text-blue-600 mt-0.5">01/2013 – 01/2016</div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column (Sidebar) -->
+            <div class="w-full md:w-72 print:w-64 bg-slate-50 px-6 py-5 print:bg-transparent print:border-l print:border-gray-200">
+
+                <!-- Key Achievements -->
+                <section class="mb-6">
+                    <div class="flex items-center gap-2 border-b-2 border-blue-600 pb-1 mb-3">
+                        <i data-lucide="award" class="w-4 h-4 text-blue-600"></i>
+                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">Achievements</h3>
+                    </div>
+                    <div class="space-y-3">
+
+                        <!-- Highlighted: Chrome Extension -->
+                        <div class="achievement-card-new rounded-md p-2.5">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <i data-lucide="chrome" class="w-3.5 h-3.5 text-amber-500"></i>
+                                <h4 class="text-xs font-bold text-slate-800">Chrome Extension Automation</h4>
+                            </div>
+                            <p class="text-xs text-gray-600 leading-snug">Built a Chrome Extension for automated report downloading from Quick Commerce &amp; e-commerce portals (Swiggy Instamart, Blinkit, Amazon, Flipkart, etc.) — achieving <strong class="text-amber-700">~65% automated data downloads</strong>, significantly reducing manual effort.</p>
+                        </div>
+
+                        <!-- Highlighted: AI Platform -->
+                        <div class="achievement-card rounded-md p-2.5">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <i data-lucide="cpu" class="w-3.5 h-3.5 text-blue-500"></i>
+                                <h4 class="text-xs font-bold text-slate-800">AI-Powered Platform</h4>
+                            </div>
+                            <p class="text-xs text-gray-600 leading-snug">Architected an AI-powered omnichannel commerce platform processing <strong class="text-blue-700">&gt;5M orders/day</strong> during peak events.</p>
+                        </div>
+
+                        <!-- Workflow Automation -->
+                        <div class="achievement-card rounded-md p-2.5">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <i data-lucide="zap" class="w-3.5 h-3.5 text-blue-500"></i>
+                                <h4 class="text-xs font-bold text-slate-800">Workflow Automation</h4>
+                            </div>
+                            <p class="text-xs text-gray-600 leading-snug">Automated over <strong class="text-blue-700">65%</strong> of operational workflows through internal tooling, significantly improving productivity.</p>
+                        </div>
+
+                        <!-- Platform Integrations -->
+                        <div class="achievement-card rounded-md p-2.5">
+                            <div class="flex items-center gap-1.5 mb-1">
+                                <i data-lucide="link" class="w-3.5 h-3.5 text-blue-500"></i>
+                                <h4 class="text-xs font-bold text-slate-800">Platform Integrations</h4>
+                            </div>
+                            <p class="text-xs text-gray-600 leading-snug">Built integrations across Shopee, Lazada, Amazon, and logistics providers for unified data sync.</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Certifications / Extra Info placeholder if needed -->
+                <section>
+                    <div class="flex items-center gap-2 border-b-2 border-blue-600 pb-1 mb-3">
+                        <i data-lucide="star" class="w-4 h-4 text-blue-600"></i>
+                        <h3 class="text-sm font-bold text-gray-900 uppercase tracking-wider">Highlights</h3>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="highlight-badge rounded px-3 py-2 text-xs leading-snug">
+                            <span class="font-bold block">9+ Years Experience</span>
+                            Lead-level distributed systems & e-commerce
+                        </div>
+                        <div class="highlight-badge rounded px-3 py-2 text-xs leading-snug">
+                            <span class="font-bold block">Microservice & Event-Driven Expert</span>
+                            Scalable architecture for high-throughput platforms
+                        </div>
+                        <div class="highlight-badge rounded px-3 py-2 text-xs leading-snug">
+                            <span class="font-bold block">AI/Automation Builder</span>
+                            LangChain, RAG pipelines, Chrome Extensions
+                        </div>
+                        <div class="highlight-badge rounded px-3 py-2 text-xs leading-snug">
+                            <span class="font-bold block">Agile Scrum Master</span>
+                            Led cross-functional engineering teams
+                        </div>
+                    </div>
